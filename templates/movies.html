@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Welcome to movies page</h2>
+
+    <!-- i want to convert the first 5 characters to capital letter -->
+
+    <h2>Available movies list <br> {{movies}}</h2>
+
+    <ul>
+        {% for movie in movies %}
+
+        <li>{{movie|upper}}</li>
+
+        {% endfor %}
+    </ul>
+
+    <h3>Upcoming movies are {{upcoming|upper}}</h3>
+    <img src = "{% static 'images/ai_gen.jpg'  %}"
+
+
+
+
+
+
+
+
+</body>
+</html>
