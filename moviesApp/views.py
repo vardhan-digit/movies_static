@@ -17,6 +17,18 @@ def available_movies(request):
 
 
 
+def book_movies(request):
+
+
+    data = {'movies':['Little Hearts','OG','Demon Slayer', 'Mirai', 'KGF2'],
+            'upcoming':'Rajsaab',
+            'movies_with_issues':['OG','Demon Slayer', 'Mirai']
+            
+            
+            }
+
+    return render(request, 'book_movies.html', context = data)
+
 
 
 def add(request, a, b):
